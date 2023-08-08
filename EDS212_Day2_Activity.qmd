@@ -28,3 +28,16 @@ a = 1.2
 
 eval(dpda)
 ```
+
+```{r}
+ggplot(data = penguins, aes(x = bill_length_mm,
+    y = bill_depth_mm, color = species)) +
+         geom_point()
+```
+
+```{r}
+ggplot(data = penguins, aes(x = species,
+    y = flipper_length_mm)) +
+  labs(x = "Penguin Species", y = "Penguin flipper length (mm)", title = "Penguin flipper length by Species") +
+         geom_jitter()
+```
