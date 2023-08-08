@@ -31,12 +31,14 @@ eval(dpda)
 ```
 
 ```{r}
+#create ggplot and sort species by color
 ggplot(data = penguins, aes(x = bill_length_mm,
     y = bill_depth_mm, color = species)) +
          geom_point()
 ```
 
 ```{r}
+#create ggplot and use jitter graph and add axes titles
 ggplot(data = penguins, aes(x = species,
     y = flipper_length_mm)) +
   labs(x = "Penguin Species", y = "Penguin flipper length (mm)", title = "Penguin flipper length by Species") +
