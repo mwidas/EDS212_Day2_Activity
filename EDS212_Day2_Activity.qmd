@@ -20,12 +20,13 @@ eval(dfdx)
 ```
 
 ```{r}
+#finding derivative of function pa
 pa = expression( 2 * (3 * a + 2) ^ 4 - 5)
-
+#creating the derivative
 dpda = D(pa, 'a')
-
+#want to evaluate function at 1.2
 a = 1.2
-
+#evaluate derivative at 1.2
 eval(dpda)
 ```
 
